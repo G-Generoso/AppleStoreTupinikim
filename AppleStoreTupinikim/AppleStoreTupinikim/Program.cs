@@ -1,9 +1,13 @@
+using AppleStoreTupinikim.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+builder.Services.AddDbContext<Contexto>(options => options.UseMySql("server=localhost;initial catalog=CRUD_MVC_MYSQL;Uid=Gabriel;Pwd=123456789", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.33-mysql")));
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
