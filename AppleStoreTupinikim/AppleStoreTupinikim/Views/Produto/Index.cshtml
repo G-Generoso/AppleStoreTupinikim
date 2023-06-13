@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Lista de Produtos";
+}
+<div class="text-center">
+    <h1 class="display-4">Listagem de Produtos</h1>
+    <br />
+    <div class="d-grid gap-2 d-md-flex">
+        <a class="btn btn-primary" role="button" asp-controller="Produto" asp-action="Criar">Inserir Produto</a>
+    </div>
+    <br />
+    <p>Sistema de Gestão de produtos</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome do Produto</th>
+                <th scope="col">Valor ($)</th>
+                <th scope="col">Estoque</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Iphoine 14</td>
+                <td>6.000,00</td>
+                <td>10</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>MC Book Air 13</td>
+                <td>6.389,10</td>
+                <td>2</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Apple Watch SE</td>
+                <td>2.339,10</td>
+                <td>5</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>iPad Pro</td>
+                <td>28.499,00</td>
+                <td>7</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
